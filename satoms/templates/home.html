@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструменты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .tools-list {
+            list-style: none;
+            padding: 0;
+        }
+        .tools-list li {
+            margin: 10px 0;
+        }
+        .tools-list a {
+            text-decoration: none;
+            color: #0066cc;
+            padding: 5px;
+        }
+        .tools-list a:hover {
+            text-decoration: underline;
+        }
+        .internal-tools {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Инструменты</h1>
+    
+    <ul class="tools-list">
+        <li><a href="https://tracker.yandex.ru/pages/my">Яндекс Трекер</a></li>
+        <li><a href="https://wiki.yandex.ru/">ЯВики</a></li>
+
+    </ul>
+
+    <div class="internal-tools">
+        <h2>Внутренние инструменты</h2>
+        <ul class="tools-list">
+            <li><a href="#">Конвертер Видео в текст</a></li>
+            <li><a href="#">Парсер цен</a></li>
+            <li><a href="http://127.0.0.1:8000/licenses/">Проверка Лицензий</a></li>
+            <li><a href="http://192.168.121.165:9090/targets">Prometheus</a></li>
+            <li><a href="http://192.168.121.165:3000/">Grafana</a></li>
+        </ul>
+    </div>
+</body>
+</html>

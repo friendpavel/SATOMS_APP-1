@@ -1,0 +1,17 @@
+localhost/Home.html
+
+Инструменты
+
+Яндекс Трекер https://tracker.yandex.ru/pages/my
+ЯВики https://wiki.yandex.ru/
+Prometheus http://192.168.121.165:9090/targets
+Grafana http://192.168.121.165:3000/
+Парсер цен 
+Проверка Лицензий
+Конвертер Видео в текст
+
+TODO:Управление Ботами
+TODO:День рождения
+TODO:Рассчеты для ЛНК
+TODO:Перевод Видео(Аудио) в текст
+TODO:Морской Бой
