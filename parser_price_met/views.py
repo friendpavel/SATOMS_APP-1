@@ -16,15 +16,12 @@ def format_date(date_str):
 
 def get_stats():
     with connections['platferrum'].cursor() as cursor:
-        # Получаем количество уникальных наименований
         cursor.execute("SELECT COUNT(DISTINCT name) FROM prices")
         total_items = cursor.fetchone()[0]
         
-        # Получаем общее количество записей
         cursor.execute("SELECT COUNT(*) FROM prices")
         total_records = cursor.fetchone()[0]
         
-        # Получаем первую и последнюю дату
         cursor.execute("SELECT MIN(date), MAX(date) FROM prices")
         first_date, last_date = cursor.fetchone()
         
