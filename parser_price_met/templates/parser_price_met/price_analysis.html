@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>База цен Platferrum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .stats {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>База цен Platferrum</h1>
+    
+    <div class="stats">
+        <h2>Статистика базы данных:</h2>
+        <p>Всего записей в базе: <strong>{{ stats.total_records }}</strong></p>
+        <p>Уникальных наименований: <strong>{{ stats.total_items }}</strong></p>
+        <p>Первая запись в базе: <strong>{{ stats.first_date }}</strong></p>
+        <p>Последнее обновление: <strong>{{ stats.last_date }}</strong></p>
+    </div>
+
+    <a href="?download=true" class="download-btn">Скачать полную базу</a>
+</body>
+</html>
