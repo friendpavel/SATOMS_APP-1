@@ -8,7 +8,6 @@ from datetime import datetime
 def format_date(date_str):
     if date_str:
         try:
-            # Преобразуем строку в объект даты
             date_obj = datetime.strptime(str(date_str), '%Y-%m-%d')
             return date_obj.strftime('%d.%m.%Y')
         except:
