@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+  web:
+    image: returndeath/satoms:latest
+    command: bash -c "python manage.py runserver 0.0.0.0:8000 & python parser.py & wait"
+    volumes:
+      - static_data:/app/staticfiles:rw
+      - db_data:/app/db:rw
+    environment:
+      - DB_PATH=/app/db/platferrum.db
+    expose:
+      - 8000
+    restart: unless-stopped
+
+  nginx:
+    image: returndeath/satoms-nginx:latest
+    volumes:
+      - static_data:/app/staticfiles:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - web
+
+volumes:
+  static_data:
+  db_data:
