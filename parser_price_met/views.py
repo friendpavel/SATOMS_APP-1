@@ -35,7 +35,6 @@ def get_stats():
 def price_analysis(request):
     if request.GET.get('download') == 'true':
         with connections['platferrum'].cursor() as cursor:
-            # Изменяем запрос, чтобы получить дату в нужном формате сразу из SQL
             cursor.execute("""
                 SELECT name, type, unit_price, sign_nat,
                        strftime('%d.%m.%Y', date) as formatted_date
