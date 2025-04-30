@@ -7,6 +7,7 @@ import json
 import re
 import time
 
+# Настройка логирования
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 HEADERS = {
