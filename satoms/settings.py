@@ -19,7 +19,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ascon_lic',
-    'converter_v_a_txt',
     'parser_price_met',
 ]
 
